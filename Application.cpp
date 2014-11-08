@@ -34,8 +34,10 @@ bool Application::onInit(){
 	m_inputManager->registerObserver(m_gameObject);
 
 	KeyMessage dwnmsg(MSG_KEY_DOWN, 12);
+	MouseMessage mousemsg(MSG_MOUSE_MOVED, 25);
 
 	m_inputManager->sendToObserver(&dwnmsg);
+	m_inputManager->sendToObserver(&mousemsg);
 
 
 	onUpdate();

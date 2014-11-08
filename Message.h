@@ -25,3 +25,10 @@ class KeyMessage : public Message {
 
 };
 
+class MouseMessage : public Message {
+
+	public:
+		MouseMessage(messageType type, int pos);
+		int m_pos;
+
+};

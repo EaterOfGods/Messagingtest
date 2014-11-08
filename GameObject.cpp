@@ -29,6 +29,13 @@ void GameObject::handleMessage(const Message* msg)
 			std::cout << "Message key: " << key_msg->m_key << std::endl;
 			break;
 		}
+		case MSG_MOUSE_MOVED:
+		{
+			const MouseMessage* mouse_msg = static_cast<const MouseMessage*>(msg);
+			std::cout << "Message type: " << mouse_msg->m_type << std::endl;
+			std::cout << "Message mouse pos: " << mouse_msg->m_pos << std::endl;
+			break;
+		}
 	
 	}
 
