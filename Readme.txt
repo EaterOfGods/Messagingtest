@@ -1,0 +1,1 @@
+Just trying out a crude version of a messaging system using some sort of observer pattern.
