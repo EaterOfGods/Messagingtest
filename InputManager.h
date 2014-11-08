@@ -11,7 +11,7 @@ class InputManager {
 
 		void registerObserver(GameObject* object);
 		void sendToObserver(Message* msg);
-		void unregisterObserver();
+		void unregisterObserver(GameObject* object);
 	
 	private:
 		std::vector<GameObject*>	m_Observers;

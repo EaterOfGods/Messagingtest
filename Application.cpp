@@ -39,6 +39,7 @@ bool Application::onInit(){
 	m_inputManager->sendToObserver(&dwnmsg);
 	m_inputManager->sendToObserver(&mousemsg);
 
+	m_inputManager->unregisterObserver(m_gameObject);
 
 	onUpdate();
 
